@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JSON</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="catprompt">Select a category</string>
+
+    <string-array name="categories">
+        <item>Income</item>
+        <item>Expenses</item>
+        <item>Audit</item>
+        <item>Receivables</item>
+        <item>Purchases</item>
+        <item>Interest</item>
+    </string-array>
+</resources>
