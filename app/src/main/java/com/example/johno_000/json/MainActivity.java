@@ -1,12 +1,15 @@
 package com.example.johno_000.json;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 
@@ -39,7 +42,16 @@ public class MainActivity extends ActionBarActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.categories, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categories.setAdapter(adapter);*/
-
+        Button btnNext = (Button) findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(MainActivity.this, Postdata.class);
+                        startActivity(i);
+                    }
+                }
+        );
 
         ListView listView = (ListView) findViewById(R.id.listView);
         final String url = "http://javatechig.com/api/get_category_posts/?dev=1&slug=android";

@@ -13,4 +13,5 @@
         <item>Purchases</item>
         <item>Interest</item>
     </string-array>
+    <string name="title_activity_postdata">Postdata</string>
 </resources>

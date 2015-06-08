@@ -18,4 +18,13 @@
         android:id="@+id/listView"
         ></ListView>
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:background="#2229ff"
+        android:id="@+id/btnNext" />
+
 </RelativeLayout>
